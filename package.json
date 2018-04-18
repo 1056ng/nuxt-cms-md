@@ -1,7 +1,14 @@
 {
   "name": "nuxt-cms-md",
+  "description": "nuxt module for cms by markdown",
+  "keywords": [
+    "nuxt",
+    "cms",
+    "md",
+    "nuxt-cms-md"
+  ],
+  "license": "MIT",
   "version": "1.0.0",
-  "description": "",
   "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,7 +18,6 @@
     "url": "git+https://github.com/1056ng/nuxt-cms-md.git"
   },
   "author": "AKIHIRO TOKORO (https://1056ng.jp/)",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/1056ng/nuxt-cms-md/issues"
   },
