@@ -31,6 +31,55 @@ module.exports = {
 }
 ```
 
+## index.vue
+
+```
+<template>
+  <ul>
+    <li v-for="blog in blogs">
+      <nuxt-link :to="{ path: `/blogs/${blog.id}/` }">Read {{ blog.id }}</nuxt-link>
+    </li>
+  </ul>
+</template>
+
+<script>
+export default {
+  asyncData() {
+    return {
+      blogs: require('~/static/models/blogs/list.json')
+    }
+  },
+}
+</script>
+
+```
+
+## blogs/\_id.vue
+
+```
+<template>
+  <div>
+    <div>記事id: {{ blog.id }}</div>
+    <div>
+      <div>記事tags</div>
+      <div v-for="tag in blog.tags">　{{ tag }}</div>
+    </div>
+    <div v-html="blog.html"></div>
+    <nuxt-link :to="{ path: `/` }">Back List</nuxt-link>
+  </div>
+</template>
+
+<script>
+export default {
+  asyncData({ params }) {
+    return {
+      blog: require(`~/static/models/blogs/${params.id}.json`),
+    }
+  },
+}
+</script>
+```
+
 ## use
 
 ```
