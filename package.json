@@ -1,0 +1,34 @@
+{
+  "name": "nuxt-cms-md",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1056ng/nuxt-cms-md.git"
+  },
+  "author": "AKIHIRO TOKORO (https://1056ng.jp/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/1056ng/nuxt-cms-md/issues"
+  },
+  "homepage": "https://github.com/1056ng/nuxt-cms-md#readme",
+  "dependencies": {
+    "copy-dir": "^0.3.0",
+    "del": "^3.0.0",
+    "glob-md2data": "git+ssh://git@github.com/1056ng/glob-md2data.git",
+    "jsonfile": "^4.0.0",
+    "markdown-it": "^8.4.1",
+    "markdown-it-img": "git+ssh://git@github.com/1056ng/markdown-it-img.git",
+    "mkdirp": "^0.5.1",
+    "moment": "^2.22.1",
+    "split-array": "^1.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-plugin-node": "^6.0.1"
+  }
+}
