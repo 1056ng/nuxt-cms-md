@@ -1,7 +1,7 @@
 # Nuxt CMS By Markdown
 nuxt module for cms by markdown
 
-## Structure
+## structure
 
 [Example here](https://github.com/1056ng/nuxt-cms-md-example)
 
@@ -29,6 +29,12 @@ module.exports = {
     ['nuxt-cms-md'],
   ],
 }
+```
+
+## use
+
+```
+nuxt generate or nuxt dev
 ```
 
 ## License
